@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 
-import { capture_it } from "../fonts";
+import { europeextendedCbold, capture_it } from '@/app/fonts';
 
 import AnimatedElement from '@/hooks/AnimatedElement'
 import { motion } from 'framer-motion';
@@ -15,9 +15,9 @@ export default function AboutEbec() {
 
     return (
         <section className="min-h-screen flex flex-col items-center justify-center max-w-6xl px-6 mx-auto gap-8 lg:gap-14 my-12">
-            <AnimatedElement direction="bottom">
-                <h3 className={`${capture_it.className} uppercase text-5xl md:text-7xl text-center`}>Портрет учасника</h3>
-            </AnimatedElement>
+            {/* <AnimatedElement direction="bottom"> */}
+            <h3 className={`${capture_it.className} uppercase text-5xl md:text-7xl text-center`}>Портрет учасника</h3>
+            {/* </AnimatedElement> */}
             <div className="flex flex-col items-center justify-center w-full md:text-xl">
                 <motion.div
                     ref={frame}
@@ -32,14 +32,13 @@ export default function AboutEbec() {
                         visible: { opacity: 1, scale: 1, y: 0 }
                     }} className="relative bottom-20 max-w-md w-full z-10 h-72 my-12">
 
-                    <Image src='/person.svg' alt="person" width={450} height={450} className="transition-all p-[4rem] absolute max-w-96 h-96" />
-                    <Image src='/personFrame.svg' alt="person" width={450} height={450} className="transition-all absolute max-w-96 h-96" />
+                    <Image src='/partic.svg' alt="person" width={450} height={450} className="transition-all p-[4rem] absolute max-w-96 h-96" />
 
                 </motion.div>
-                <span className="text-2xl">Студент НУ «ЛП»</span>
-                <div className="flex gap-5 my-5">
-                    <span className="font-bold text-xl">Вік:</span>
-                    <span className="text-xl">17-21</span>
+                <span className={` text-2xl md:text-4xl ${europeextendedCbold.className}`}>Студент НУ «ЛП»</span>
+                <div className={`flex text-xl md:text-3xl gap-5 my-5 ${europeextendedCbold.className}`}>
+                    <span className="font-bold ">Вік:</span>
+                    <span>17-21</span>
                 </div>
                 <div>
                     <p>Спеціальності</p>

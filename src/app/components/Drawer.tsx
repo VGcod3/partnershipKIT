@@ -1,6 +1,7 @@
+'use client'
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cross1Icon } from '@radix-ui/react-icons';
-import { anonymous_pro } from "../fonts";
+import { anonymous_pro_bold } from "../fonts";
 import { useEffect } from 'react';
 
 import * as Dialog from '@radix-ui/react-dialog';
@@ -82,11 +83,13 @@ export default function Drawer({
                                                         handleScrollClick(item.href)
                                                     }}
                                                     key={item.name}
-                                                    className={`${anonymous_pro.className} cursor-pointer transition-all -mx-3 block px-3 py-2 text-lg font-semibold leading-7 text-gray-200 hover:bg-bec-darker rounded`}
+                                                    className={`${anonymous_pro_bold.className} cursor-pointer transition-all -mx-3 block px-3 py-2 text-lg text-center font-semibold leading-7 text-gray-200 hover:bg-bec-darker rounded`}
                                                 >
                                                     {item.name}
                                                 </span>
                                             ))}
+                                            <button onClick={() => handleScrollClick('#offers')} className={`${anonymous_pro_bold.className} rounded-md w-full bg-bec-orange text-black p-2 xl:p-3`}>Стати партнером</button>
+
                                         </div>
 
                                     </div>

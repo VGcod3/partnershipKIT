@@ -5,6 +5,16 @@ import AboutEbec from './components/AboutEbec';
 import CSID from './components/CSID';
 import ForCompany from './components/ForCompany';
 import Portrait from './components/Portrait'
+import Stats from './components/Stats';
+import Offers from './components/Offers';
+import Additional from './components/Additional'
+import Cart from './components/Cart';
+import Report from './components/Report';
+import Partners from './components/Partners'
+import AboutBest from './components/AboutBest'
+import Contacts from './components/Contacts'
+import Footer from './components/Footer'
+
 
 export default function Home() {
   return (
@@ -15,6 +25,15 @@ export default function Home() {
       <CSID />
       <ForCompany />
       <Portrait />
+      <Stats />
+      <Offers />
+      <Additional />
+      <Cart />
+      <Report />
+      <Partners />
+      <AboutBest />
+      <Contacts />
+      <Footer />
     </main>
   )
 }
