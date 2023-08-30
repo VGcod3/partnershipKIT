@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { iOptional } from '@/types/sp';
+import { iOptional } from '@/types';
 
 const options: iOptional[] = [
     {

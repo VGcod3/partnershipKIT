@@ -1,14 +1,24 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState = false;
+import { iModalData, ModalParams } from "@/types";
+
+const initialState: iModalData = {
+    showModal: false,
+    name: "",
+    modalData: []
+
+};
 
 const modalSlice = createSlice({
     name: 'openModal',
     initialState,
     reducers: {
-        toggleModal: (state) => {
-            console.log('toggle modal')
-            return !state;
+        toggleModal: (state, action: PayloadAction<ModalParams>) => {
+            return {
+                showModal: !state.showModal,
+                name: action.payload.name,
+                modalData: action.payload.modalData
+            };
         }
     }
 })

@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { iSellingPoint } from '@/types/sp';
+import { iSellingPoint } from '@/types';
 
 const sellingPoints: iSellingPoint[] = [
     {
         compulsory: true,
         active: true,
         name: 'Basic',
-        price: 600,
+        price: 250,
         annotation: "Обов'язковий",
         services: [
             `Участь у нетворкінгу`,
@@ -20,7 +20,7 @@ const sellingPoints: iSellingPoint[] = [
         compulsory: false,
         active: false,
         name: 'Engineer',
-        price: 600,
+        price: 500,
         annotation: "4 left",
         services: [
             'Завдання для CS(Case Study)/ID(Innovative Design)',
@@ -35,7 +35,7 @@ const sellingPoints: iSellingPoint[] = [
         compulsory: false,
         active: false,
         name: 'Brand',
-        price: 250,
+        price: 200,
         annotation: '',
         services: [
             `Розміщення банера компанії на події`,

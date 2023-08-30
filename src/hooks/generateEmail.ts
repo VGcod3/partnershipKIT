@@ -1,4 +1,4 @@
-import { iSellingPoint, iOptional } from '@/types/sp';
+import { iSellingPoint, iOptional } from '@/types';
 
 export const generateMessage = (name: string, sellingPoints: iSellingPoint[], optionalPoints: iOptional[], activeOptionsPriceSum: number, selligPointsPriceSum: number, totalSum: number, isDiscount: boolean): string => `<!DOCTYPE html>
     <table
@@ -94,7 +94,7 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
           </table>
 
           ${optionalPoints.filter((opt) => opt.active).length > 0
-        ? `
+    ? `
     <table cellpadding="10" cellspacing="0" width="100%">
       <tr>
         <th
@@ -114,11 +114,11 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
       </tr>
 
       ${optionalPoints.map(op =>
-            `<tr>
+      `<tr>
           <td style="text-align: left">${op.name}</td>
           <td style="text-align: right">${op.price}</td>
         </tr>`
-        ).join('')}
+    ).join('')}
 
       <tr>
         <td colspan="2" style="text-align: right; padding-top: 10px">
@@ -126,14 +126,14 @@ export const generateMessage = (name: string, sellingPoints: iSellingPoint[], op
         </td>
       </tr>
     </table>`
-        : ''}
+    : ''}
     
     ${isDiscount ?
-        `<p style="text-align: right; font-weight: 600;">
+    `<p style="text-align: right; font-weight: 600;">
       Вартість після знижки (-${selligPointsPriceSum +
-        activeOptionsPriceSum - totalSum}): ${totalSum}
+    activeOptionsPriceSum - totalSum}): ${totalSum}
     </p>`
-        : `<p style="text-align: right; font-weight: 600;">
+    : `<p style="text-align: right; font-weight: 600;">
       Загальна вартість: ${totalSum}
     </p>`}
     

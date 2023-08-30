@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';
-import { iSellingPoint, iOptional } from '@/types/sp';
+import { iSellingPoint, iOptional } from '@/types';
 import emailjs from '@emailjs/browser';
 
 import { useFormik } from 'formik';
@@ -12,7 +12,7 @@ import { generateMessage } from '@/hooks/generateEmail';
 
 import AnimatedElement from "@/hooks/AnimatedElement";
 
-import { capture_it, anonymous_pro_regular, europeextendedRegular, europeextendedCbold, anonymous_pro_bold } from "../fonts";
+import { capture_it, anonymous_pro_regular, europeextendedRegular, europeextendedCbold, anonymous_pro_bold } from "../../fonts";
 
 
 // Create a Yup schema for form validation
@@ -147,7 +147,7 @@ export default function Cart() {
               1. При купівлі одразу 3-х пакетів надається знижка в розмірі 10%.
             </p>
             <p>
-              2. Для компаній-партнерів EBEC’2020 надається знижка в розмірі 5% на всі пропозиції.
+              2. Для компаній-партнерів EBEC’2021 надається знижка в розмірі 5% на всі пропозиції.
             </p>
             <p>
               3. Усім партнерам, що працюють у сфері military, military-tech знижка 10%.

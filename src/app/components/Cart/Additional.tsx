@@ -6,10 +6,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toggleOptionActive } from '@/redux/optionalSlice';
 import { RootState } from '@/redux/store';
 
-import { iOptional } from "@/types/sp";
+import { iOptional } from "@/types";
 
 
-import { capture_it, anonymous_pro_regular, europeextendedRegular } from "../fonts";
+import { capture_it, anonymous_pro_regular, europeextendedRegular } from "../../fonts";
 
 const Option = ({ name, price, active }: iOptional) => {
     const dispatch = useDispatch();
@@ -20,10 +20,10 @@ const Option = ({ name, price, active }: iOptional) => {
     };
 
     return (
-        <div className={`flex w-full rounded-full justify-between items-center md:py-4 py-2 px-2 sm:px-4 md:px-8 bg-bec-svg ${active ? 'border-bec-darker border-2' : ''}`}>
+        <div onClick={handleToggleOption} className={`flex w-full rounded-full justify-between items-center md:py-4 py-2 px-2 sm:px-4 md:px-8 bg-bec-svg ${active ? 'border-bec-darker border-2' : ''}`}>
             <span className={`lg:text-4xl sm:text-xl text-md`}>{name}</span>
             <div className="right flex gap-2 md:gap-4">
-                <button onClick={handleToggleOption} className={`${anonymous_pro_regular.className} text-base sm:text-2xl md:text-4xl bg-bec-bg rounded-2xl border-2 w-fit border-white px-5 md:px-10 py-2 self-center`}>
+                <button className={`${anonymous_pro_regular.className} text-base sm:text-2xl md:text-4xl bg-bec-bg rounded-2xl border-2 w-fit border-white px-5 md:px-10 py-2 self-center`}>
                     {`${price}$`}
                 </button>
 
