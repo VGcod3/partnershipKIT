@@ -15,25 +15,29 @@ import AboutBest from './components/AboutBest'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
 
+import Providers from '@/redux/Providers';
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden">
-      <Header />
-      <Hero />
-      <AboutEbec />
-      <CSID />
-      <ForCompany />
-      <Portrait />
-      <Stats />
-      <Offers />
-      <Additional />
-      <Cart />
-      <Report />
-      <Partners />
-      <AboutBest />
-      <Contacts />
-      <Footer />
-    </main>
+    <Providers>
+      <main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden">
+        <Header />
+        <Hero />
+        <AboutEbec />
+        <CSID />
+        <ForCompany />
+        <Portrait />
+        <Stats />
+        <Offers />
+        <Additional />
+        <Cart />
+        <Report />
+        <Partners />
+        <AboutBest />
+        <Contacts />
+        <Footer />
+      </main>
+    </Providers>
   )
 }

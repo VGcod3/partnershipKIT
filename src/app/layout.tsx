@@ -1,12 +1,9 @@
-'use client'
 import './globals.css'
 import type { Metadata } from 'next'
 
-import { Provider } from 'react-redux'
-
-import store from '@/redux/store'
-
 import { roboto_light } from './fonts'
+
+import Providers from '@/redux/Providers'
 
 export const metadata: Metadata = {
   title: 'Partnership BEC 2023',
@@ -20,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Provider store={store}>
-        <body className={`${roboto_light.className} bg-bec-bg`}>{children}</body>
-      </Provider>
+      <body className={`${roboto_light.className} bg-bec-bg`}>{children}</body>
     </html>
   )
 }
