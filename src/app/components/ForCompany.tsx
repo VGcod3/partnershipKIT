@@ -21,7 +21,7 @@ export default function ForCompany() {
                 {
                     possibilities.map((pos, i) => (
                         // <AnimatedElement delay={i % 2 ? 0.4 : 0.2} direction={i % 2 ? 'right' : 'left'}>
-                        <div className="flex gap-4 items-center mx-auto max-w-lg h-[45vw] max-h-64 px-20 py-12 relative text-2xl ">
+                        <div className="flex gap-4 items-center mx-auto max-w-lg h-[50vw] max-h-64 px-16 py-14 relative text-2xl ">
                             <Image src='/topFrame.svg' alt="top frame" width={420} height={220} className="absolute top-0 right-0 w-4/5 " />
                             <Image src='/bottomFrame.svg' alt="bottom frame" width={420} height={220} className="absolute bottom-0 left-0 w-4/5 " />
                             <p className={`relative z-10 text-center text-sm md:text-lg ${europeextendedRegular.className}`}>

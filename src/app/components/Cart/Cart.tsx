@@ -113,7 +113,7 @@ export default function Cart() {
         </div>
         <div className="col-span-1 flex flex-col gap-5">
 
-          <form className="border-[3px] rounded-2xl py-6 px-14 gap-4 flex flex-col" onSubmit={formik.handleSubmit}                    >
+          <form className="border-[3px] rounded-2xl lg:py-6 lg:px-14 px-6 py-4 gap-4 flex flex-col" onSubmit={formik.handleSubmit}                    >
             <input
               ref={inputRef}
               type="text"
@@ -140,7 +140,7 @@ export default function Cart() {
             ) : null}
             <button
               // disabled={!formik.isValid || formik.isSubmitting}
-              className="border-2 rounded-md bg-[#443625] focus:border-bec-orange outline-none w-fit px-10 py-4 self-center text-md" type="submit">Submit</button>
+              className="border-2 rounded-md bg-[#443625] focus:border-bec-orange outline-none w-full sm:w-fit px-10 py-4 self-center text-md" type="submit">Submit</button>
           </form>
           <div className={`${anonymous_pro_regular.className}  leading-relaxed`}>
             <p>

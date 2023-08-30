@@ -26,7 +26,7 @@ const Section = () => {
             <Cart />
             <Dialog.Portal>
                 <Dialog.Overlay className='fixed w-full h-full top-0 left-0 z-40 bg-black bg-opacity-50 backdrop-blur-sm' />
-                <Modal />
+                <Modal handleModal={handleModal} />
             </Dialog.Portal>
         </Dialog.Root>
     )

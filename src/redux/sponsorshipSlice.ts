@@ -35,7 +35,7 @@ const sellingPoints: iSellingPoint[] = [
         compulsory: false,
         active: false,
         name: 'Brand',
-        price: 200,
+        price: 250,
         annotation: '',
         services: [
             `Розміщення банера компанії на події`,
@@ -45,7 +45,6 @@ const sellingPoints: iSellingPoint[] = [
             `Пост у нашому Telegram - каналі`
         ]
     },
-
 ]
 
 // Initialize chosenSponsorships with compulsory items

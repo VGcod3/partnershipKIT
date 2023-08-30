@@ -4,20 +4,38 @@ import AnimatedElement from "@/hooks/AnimatedElement";
 
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleOptionActive } from '@/redux/optionalSlice';
+import { toggleModal } from '@/redux/modalSlice'
 import { RootState } from '@/redux/store';
 
-import { iOptional } from "@/types";
+import { dataItem, iOptional, ModalParams } from "@/types";
 
+import { capture_it, anonymous_pro_regular } from "../../fonts";
 
-import { capture_it, anonymous_pro_regular, europeextendedRegular } from "../../fonts";
+const explanation: dataItem[] = [
+
+    {
+        heading: 'Лого на плакатах',
+        details: "Плакати про подію будуть розповсюджені на території кампусу та студмістечка."
+    },
+    {
+        heading: 'Логотип на футболках',
+        details: "Проєкт буде мати свій мерч, який поширюватиметься серед учасників змагання та осередку BEST Lviv. Ми розмістимо лого Вашої компанії на спині футболок."
+    },
+    {
+        heading: 'Розсилка вакансій в телеграм боті',
+        details: "Проєкт буде мати свого бота в телеграмі для реєстрації команд учасників (зможливістью прикріпити своє CV), розсилки важливої інформації та комунікації під час заходу."
+    },
+]
 
 const Option = ({ name, price, active }: iOptional) => {
     const dispatch = useDispatch();
 
     const handleToggleOption = () => {
         dispatch(toggleOptionActive({ name }));
-
     };
+
+    const handleModal = ({ name, modalData }: ModalParams) => dispatch(toggleModal({ name, modalData }))
+
 
     return (
         <div onClick={handleToggleOption} className={`flex w-full rounded-full justify-between items-center md:py-4 py-2 px-2 sm:px-4 md:px-8 bg-bec-svg ${active ? 'border-bec-darker border-2' : ''}`}>
@@ -27,7 +45,7 @@ const Option = ({ name, price, active }: iOptional) => {
                     {`${price}$`}
                 </button>
 
-                <button>
+                <button onClick={() => handleModal({ name: 'Optional', modalData: explanation })}>
                     <Image src='/information.svg' width={50} height={50} alt="info" className="md:w-12 w-8 md:h-12 min-h-8 hidden sm:block" />
                 </button>
             </div>
