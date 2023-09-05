@@ -14,9 +14,7 @@ const possibilities = [
 export default function ForCompany() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center max-w-6xl px-6 mx-auto gap-8 lg:gap-14 my-12">
-            {/* <AnimatedElement direction="bottom"> */}
             <h3 className={`${capture_it.className} uppercase text-4xl lg:text-5xl text-center`}>Для компанії BEC - це можливість:</h3>
-            {/* </AnimatedElement> */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-11">
                 {
                     possibilities.map((pos, i) => (

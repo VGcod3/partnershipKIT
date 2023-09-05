@@ -8,9 +8,7 @@ import AnimatedElement from '@/hooks/AnimatedElement'
 export default function AboutBest() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center max-w-6xl w-full px-6 mx-auto gap-8 lg:gap-14">
-            {/* <AnimatedElement direction="bottom"> */}
             <h2 className={`${capture_it.className} uppercase text-5xl my-20 md:text-7xl text-center`}>Про BEST Lviv</h2>
-            {/* </AnimatedElement> */}
 
             <div className="grid gap-5 w-full grid-cols-12">
                 <div className="md:col-span-5 col-span-12">

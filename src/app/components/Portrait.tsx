@@ -15,9 +15,7 @@ export default function AboutEbec() {
 
     return (
         <section className="min-h-screen flex flex-col items-center justify-center max-w-6xl px-6 mx-auto gap-8 lg:gap-14 my-12">
-            {/* <AnimatedElement direction="bottom"> */}
             <h3 className={`${capture_it.className} uppercase text-5xl md:text-7xl text-center`}>Портрет учасника</h3>
-            {/* </AnimatedElement> */}
             <div className="flex flex-col items-center justify-center w-full md:text-xl">
                 <motion.div
                     ref={frame}

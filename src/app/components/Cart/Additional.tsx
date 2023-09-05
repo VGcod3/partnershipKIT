@@ -59,9 +59,7 @@ export default function Offers() {
 
     return (
         <section className="flex flex-col items-center justify-center px-6 mx-auto max-w-[1400px] gap-8 my-10">
-            {/* <AnimatedElement direction="bottom"> */}
             <h2 className={`${capture_it.className} uppercase text-5xl md:text-7xl mt-16  text-center`}>Додаткові Опції</h2>
-            {/* </AnimatedElement> */}
             <div className="flex flex-wrap justify-center md:gap-10 gap-5">
                 {options.map(option => {
                     return <Option key={option.name} {...option} />

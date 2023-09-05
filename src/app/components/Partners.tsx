@@ -21,9 +21,7 @@ const partners_row_4 = ['Blaster', 'HobbyMania']
 export default function Report() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center max-w-7xl w-full px-6 mx-auto gap-8 lg:gap-14">
-            {/* <AnimatedElement direction="bottom"> */}
             <h2 className={`${capture_it.className} uppercase text-5xl my-20 md:text-7xl text-center`}>Партнери 2020-2021</h2>
-            {/* </AnimatedElement> */}
 
             <div className="grid gap-6 w-full">
                 <div className="grid-cols-4 gap-4 flex justify-evenly">

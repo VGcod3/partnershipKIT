@@ -129,9 +129,7 @@ export default function Offers() {
 
     return (
         <section className="min-h-screen flex flex-col items-center justify-center px-6 mx-auto max-w-[1400px] gap-8 my-10" id="offers">
-            {/* <AnimatedElement direction="bottom"> */}
             <h2 className={`${capture_it.className} uppercase text-5xl mt-16 md:text-7xl text-center`}>Пропозиції</h2>
-            {/* </AnimatedElement> */}
             <div className="flex flex-wrap justify-center gap-10">
                 {sellingPoints.map(sp => {
                     return <Card key={sp.name} handleModal={handleModal} {...sp} />;

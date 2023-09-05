@@ -41,7 +41,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed z-20 w-full px-2 md:px-6 flex justify-between py-[2.4vw] bg-bec-bg" >
+            className=" z-20 w-full px-2 md:px-6 flex justify-between py-[2.4vw] bg-bec-bg" >
             <Image src='/topLine.svg' width={1920} height={100} alt="header line" className="absolute left-0 w-full top-[0.5vw] h-auto" />
             <div onClick={() => {
                 handleScrollClick("#top")

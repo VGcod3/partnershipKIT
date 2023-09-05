@@ -10,7 +10,7 @@ import useSmoothScrollTo from "@/hooks/useSmoothScrollTo";
 export default function Hero() {
     const handleScrollClick = useSmoothScrollTo();
     return (
-        <section className="min-h-screen w-full flex flex-col items-center justify-center gap-5" id="top">
+        <section className="min-h-screen -m-10 w-full flex flex-col items-center justify-center gap-5" id="top">
             <div className="flex items-center max-w-5xl mx-auto gap-5 lg:gap-10 justify-between p-6">
                 <AnimatedElement direction="left">
                     <Image src='/bec.svg' height={300} width={300} alt="hero logo" className="w-[45vw] md:w-[20vw]" />

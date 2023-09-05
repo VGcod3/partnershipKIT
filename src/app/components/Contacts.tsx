@@ -8,9 +8,7 @@ import AnimatedElement from '@/hooks/AnimatedElement'
 export default function Contacts() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center max-w-7xl my-20 w-full px-6 mx-auto gap-8 lg:gap-14" id="contacts">
-            {/* <AnimatedElement direction="bottom"> */}
             <h2 className={`${capture_it.className} uppercase text-5xl my-20 md:text-7xl text-center`}>Контакти</h2>
-            {/* </AnimatedElement> */}
 
             <div className="grid gap-5 md:gap-20 w-full grid-cols-1 lg:grid-cols-3">
                 <div className="col-span-1 min-w-[300px] flex flex-col justify-center items-center gap-1 md:gap-3 md:order-1">
