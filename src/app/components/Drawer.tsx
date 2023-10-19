@@ -88,7 +88,11 @@ export default function Drawer({
                                                     {item.name}
                                                 </span>
                                             ))}
-                                            <button onClick={() => handleScrollClick('#offers')} className={`${anonymous_pro_bold.className} rounded-md w-full bg-bec-orange text-black p-2 xl:p-3`}>Стати партнером</button>
+                                              <button onClick={() => {
+                                                setMobileMenuOpen(false);
+                                                handleScrollClick('#offers')
+                                            }} className={`${anonymous_pro_bold.className} rounded-md w-full bg-bec-orange text-black p-2 xl:p-3`}>Стати партнером
+                                              </button>
 
                                         </div>
 
