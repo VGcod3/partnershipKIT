@@ -23,14 +23,14 @@ export default function Contacts() {
                     </a>
                 </div>
                 <div className="col-span-1 min-w-[300px] flex flex-col justify-center items-center gap-1 md:gap-3 md:order-1 order-first">
-                    <img src="/Artem.png" alt="Artem" className="w-48 md:w-64 mx-auto" />
-                    <p className={`${montBold.className} text-center text-xl md:text-3xl`}>Артем Онисько</p>
+                    <img src="/Bodya.png" alt="Bohdana" className="w-48 md:w-64 mx-auto" />
+                    <p className={`${montBold.className} text-center text-xl md:text-3xl`}>Богдана Гонсеровська</p>
                     <p className={`${montSemiBold.className} text-base md:text-lg text-center mb-5`}>Головний організатор</p>
-                    <a className={`${montSemiBold.className}`} href="tel:+380 68 694 51 41">
-                        +380 68 694 51 41
+                    <a className={`${montSemiBold.className}`} href="tel:+380 96 916 11 89">
+                        380 96 916 11 89
                     </a>
-                    <a className={`${montSemiBold.className} underline`} href="mailto:artem.onysko@best-eu.org">
-                        artem.onysko@best-eu.org
+                    <a className={`${montSemiBold.className} underline`} href="mailto:bohdana.honserovska@best-eu.org">
+                        bohdana.honserovska@best-eu.org
                     </a>
                 </div>
                 <div className="col-span-1 min-w-[300px] flex flex-col justify-center items-center gap-1 md:gap-3 md:order-1">
