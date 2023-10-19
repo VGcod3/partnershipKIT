@@ -27,7 +27,7 @@ export default function Contacts() {
                     <p className={`${montBold.className} text-center text-xl md:text-3xl`}>Богдана Гонсеровська</p>
                     <p className={`${montSemiBold.className} text-base md:text-lg text-center mb-5`}>Головний організатор</p>
                     <a className={`${montSemiBold.className}`} href="tel:+380 96 916 11 89">
-                        380 96 916 11 89
+                        +380 96 916 11 89
                     </a>
                     <a className={`${montSemiBold.className} underline`} href="mailto:bohdana.honserovska@best-eu.org">
                         bohdana.honserovska@best-eu.org
