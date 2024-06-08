@@ -1,23 +1,34 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import "./globals.css";
+import type { Metadata } from "next";
 
-import { roboto_light } from './fonts'
-
-import Providers from '@/redux/Providers'
+import { inter } from "./fonts";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: 'Partnership BEC 2023',
-  description: 'Best Engeneering Competition partnership broshure',
-}
+  title: "Partnership Broshure",
+  description: "Best Capture The Flag partnership offer",
+};
+import { ThemeProvider } from "@/components/ColorTheme/theme-provider";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto_light.className} bg-bec-bg`}>{children}</body>
+      <body className={`${inter.className}`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
-  )
+  );
 }

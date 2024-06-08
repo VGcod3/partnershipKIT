@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  transition: all 150ms ease-in-out;
-}
-
-:root {
-  color-scheme: dark;
+.container {
+  @apply w-full p-6 max-w-7xl mx-auto;
 }
