@@ -1,4 +1,3 @@
-import {Button} from "@/components/ui/button";
 import React from "react";
 
 const data = [
@@ -23,7 +22,7 @@ export default function DescriptionSection() {
             <div className="grid gap-y-12 md:gap-y-16 md:grid-cols-2">
                 <div className="flex flex-col justify-center"> {/* Add flex and justify-center */}
                     <div className="text-left md:mr-16">
-                        <h1 className="uppercase font-black mb-8 text-2xl md:text-3xl">
+                        <h1 className="uppercase text-center md:text-left font-black mb-8 text-2xl md:text-3xl">
                             {data[0].title}
                         </h1>
                         <p className="font-normal text-sm md:text-base">
