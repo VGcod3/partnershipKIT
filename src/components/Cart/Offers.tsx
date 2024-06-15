@@ -157,7 +157,7 @@ const Offer = ({
                 }}
               >
                 <Info strokeWidth={1.5} />
-              </Button>
+              </Button>          
             </DialogTrigger>
             <Modal />
           </Dialog>
