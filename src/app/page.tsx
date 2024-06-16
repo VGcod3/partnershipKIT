@@ -7,8 +7,8 @@ import Statistics from "../components/Statistics/Statistics"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col space-y-20 items-center justify-between overflow-x-hidden">
-       <IntroSection/>
-       <DescriptionSection/>
+      <IntroSection />
+      <DescriptionSection />
       <PartnershipSection />
       <Statistics />
       <Portrait />
