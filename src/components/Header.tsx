@@ -24,7 +24,7 @@ export default function Header() {
       initial={{ opacity: 0, y: -80 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" bg-red-700 w-full"
+      className=" bg-red-700 fixed w-full min-h-[100px] z-50"
     >
       <div className="container flex justify-between">
         <h2

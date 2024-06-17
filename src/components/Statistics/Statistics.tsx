@@ -13,6 +13,9 @@ const Statistics = () => {
                     </div>))}
                
             </div>
+            <div className="bg-white">
+                <h3 className="uppercase text-4xl md:text-5xl mb-16 text-center">Статистика минулої події</h3>
+            </div>
         </section>
     )
 }

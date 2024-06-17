@@ -6,8 +6,8 @@ import { introSection } from "../_content/_content";
 
 export default function IntroSection() {
     return (
-        <div className="container">
-            <div className="text-center h-screen items-center justify-center pt-16 md:pt-32">
+        <div className="container flex items-center justify-center">
+            <div className="text-center h-screen mt-32 md:pt-32">
                 <h3 className="uppercase text-xl md:text-2xl font-semibold tracking-wider mb-2">
                     {introSection.term}
                 </h3>

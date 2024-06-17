@@ -1,9 +1,26 @@
 import { dataItem, iOptional, ModalParams } from "@/types";
 import { iSellingPoint } from "@/types";
+
+
+
 import facebookLogo from "../../public/facebook.svg"
 import instagramLogo from "../../public/instagram.svg"
 import linkedinLogo from "../../public/linkedin.svg"
 import telegramLogo from "../../public/telegram.svg"
+
+import leobit from "@/public/leobit.svg"
+import warbirds from "@/public/warbirds.svg"
+import fujikura from "@/public/fujikura.svg"
+import tskt from "@/public/tskt.svg"
+import softserve from "@/public/softserve.svg"
+import globallogic from "@/public/globallogic.svg"
+import teamvoy from "@/public/teamvoy.svg"
+import dialog from "@/public/dialog.svg"
+import squad from "@/public/squad.svg"
+import rozkvit from "@/public/rozkvit.svg"
+import sigma from "@/public/sigma.svg"
+import dataart from "@/public/dataart.svg"
+
 
 import bestLvivLogo from "@/public/logo.svg"
 
@@ -252,7 +269,68 @@ export const additionalOptions: dataItem[] = [
 //     { value: 3, description: "sales 3 description" },
 //   ]
 // }
-
+export const partnersSection = [
+  {
+      image: leobit,
+      width: 123,
+      height: 50
+  },
+  {
+      image: warbirds,
+      width: 123,
+      height: 50
+  },
+  {
+      image: fujikura,
+      width: 123,
+      height: 50
+  },
+  {
+      image: tskt,
+      width: 123,
+      height: 50
+  },
+  {
+      image: softserve,
+      width: 123,
+      height: 50
+  },
+  {
+      image:globallogic,
+      width: 123,
+      height: 50
+  },
+  {
+      image: teamvoy,
+      width: 123,
+      height: 50
+  },
+  {
+      image: dialog,
+      width: 123,
+      height: 50
+  },  
+  {
+      image: sigma,
+      width: 123,
+      height: 50
+  },  
+  {
+      image: dataart,
+      width: 123,
+      height: 50
+  },  
+  {
+      image: squad,
+      width: 123,
+      height: 50
+  },  
+  {
+      image: rozkvit,
+      width: 123,
+      height: 50
+  },  
+]
 export const sponsorsSection =
 {
   logos: ["revo.svg", "bearmix.svg", "lvivske rizdviane.svg", "best bus.svg",]
