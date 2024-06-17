@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { portraitSection } from '../_content/_content'
 const Portrait = () => {
     return (
         <section className='grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 rows-3 gap-6 container'>
@@ -18,21 +18,14 @@ const Portrait = () => {
                         <div>
                             <h3 className="mb-3">Статистика по курсах університету:</h3>
                             <ul className="list-disc pl-4 space-y-2 text-sm" >
-                                <li>Курс 1: 95%</li>
-                                <li>Курс 2: 92%</li>
-                                <li>Курс 3: 90%</li>
-                                <li>Курс 4: 90%</li>
-                                <li>Магістратура: 90%</li>
+                                {portraitSection.course.map((item) => (<li key={item.title}>{item.title}: {item.value}</li>))}
+                                
                             </ul>
                         </div>
                         <div>
                             <h3 className="mb-3">Статистика по курсах університету:</h3>
                             <ul className="list-disc pl-4 space-y-2 text-sm">
-                                <li>Курс 1: 95%</li>
-                                <li>Курс 2: 92%</li>
-                                <li>Курс 3: 90%</li>
-                                <li>Курс 4: 90%</li>
-                                <li>Магістратура: 90%</li>
+                            {portraitSection.specialisation.map((item) => (<li key={item.title}>{item.title}: {item.value}</li>))}
                             </ul>
                         </div>
                     </div>
