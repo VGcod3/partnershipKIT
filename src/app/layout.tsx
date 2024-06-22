@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import { inter } from "./fonts";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Partnership Broshure",
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Header />
 
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -12,24 +12,24 @@ import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
 import Modal from "./Modal";
-
-const explanation: dataItem[] = [
-  {
-    heading: "Лого на плакатах",
-    details:
-      "Плакати про подію будуть розповсюджені на території кампусу та студмістечка.",
-  },
-  {
-    heading: "Логотип на футболках",
-    details:
-      "Проєкт буде мати свій мерч, який поширюватиметься серед учасників змагання та осередку BEST Lviv. Ми розмістимо лого Вашої компанії на спині футболок.",
-  },
-  {
-    heading: "Розсилка вакансій в телеграм боті",
-    details:
-      "Проєкт буде мати свого бота в телеграмі для реєстрації команд учасників (зможливістью прикріпити своє CV), розсилки важливої інформації та комунікації під час заходу.",
-  },
-];
+import { additionalOptions } from "../_content/_content";
+// const explanation: dataItem[] = [
+//   {
+//     heading: "Лого на плакатах",
+//     details:
+//       "Плакати про подію будуть розповсюджені на території кампусу та студмістечка.",
+//   },
+//   {
+//     heading: "Логотип на футболках",
+//     details:
+//       "Проєкт буде мати свій мерч, який поширюватиметься серед учасників змагання та осередку BEST Lviv. Ми розмістимо лого Вашої компанії на спині футболок.",
+//   },
+//   {
+//     heading: "Розсилка вакансій в телеграм боті",
+//     details:
+//       "Проєкт буде мати свого бота в телеграмі для реєстрації команд учасників (зможливістью прикріпити своє CV), розсилки важливої інформації та комунікації під час заходу.",
+//   },
+// ];
 
 const Option = ({ name, price, active }: iOptional) => {
   const dispatch = useDispatch();
@@ -82,7 +82,7 @@ export default function Offers() {
               className="mx-auto"
               size={"lg"}
               onClick={() =>
-                handleModal({ name: "Додаткові Опції", modalData: explanation })
+                handleModal({ name: "Додаткові Опції", modalData: additionalOptions })
               }
             >
               Переглянути деталі

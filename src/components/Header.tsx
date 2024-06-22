@@ -9,26 +9,10 @@ import useSmoothScrollTo from "@/hooks/useSmoothScrollTo";
 import Drawer from "./Drawer";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./ColorTheme/ColorThemeToggle";
+import { headerNavigation } from "./_content/_content";
 
-type MenuItem = {
-  name: string;
-  href: string;
-};
 
-const navigation: MenuItem[] = [
-  {
-    name: "Про нас",
-    href: "#about",
-  },
-  {
-    name: "Статистика",
-    href: "#stats",
-  },
-  {
-    name: "Контакти",
-    href: "#contacts",
-  },
-];
+
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -40,7 +24,7 @@ export default function Header() {
       initial={{ opacity: 0, y: -80 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" bg-red-700 w-full"
+      className=" bg-red-700 fixed w-full min-h-[100px] z-50"
     >
       <div className="container flex justify-between">
         <h2
@@ -53,7 +37,7 @@ export default function Header() {
         </h2>
 
         <div className="hidden xl:flex gap-4 items-center">
-          {navigation.map((nav_item) => (
+          {headerNavigation.map((nav_item) => (
             <Button
               variant={"ghost"}
               onClick={() => {
@@ -84,7 +68,7 @@ export default function Header() {
           </div>
           <Drawer
             setMobileMenuOpen={setMobileMenuOpen}
-            navigation={navigation}
+            navigation={headerNavigation}
             mobileMenuOpen={mobileMenuOpen}
           />
         </Dialog.Root>
